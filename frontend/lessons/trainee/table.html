@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+</head>
+<body>
+<header>
+    <label>Книжный магазин</label>
+    <br>
+    <a href="index.html">На главную</a>
+    <a href="table.html">Список книг</a>
+    <a href="register.html">Зарегистрироваться</a>
+</header>
+<main>
+    <div align="center">Список доступных книг</div>
+    <table>
+      <tr>
+        <th>Номер</th>
+        <th>Название</th>
+        <th>Автор</th>
+        <th>Заказать</th>
+      <tr>
+      <tr>
+        <td>1</td>
+        <td>Физика. Иллюстративная хронология науки</td>
+        <td>Джексон том</td>
+        <td><input type="number" min="0" max="10" value="0"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Математика для гиков</td>
+        <td>Роузен рафаэль</td>
+        <td><input type="number" min="0" max="10" value="0"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Математическая логика. Курс лекций</td>
+        <td>Шапорев Сергей Дмитриевич</td>
+        <td><input type="range" min="0" max="10" step="1" value="5"></td>
+      </tr>
+    </table>
+  <label for="search">Поиск по таблице:</label> <input type="text" id="search">
+</main>
+<footer>
+</footer>
+</body>
+</html>

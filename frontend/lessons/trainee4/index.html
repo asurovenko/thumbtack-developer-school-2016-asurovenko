@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row inner">
+            <h1>Книжный магазин</h1>
+            <br>
+            <a class="btn btn-primary" role="button" href="index.html">На главную</a>
+            <a class="btn btn-primary" role="button" href="table.html">Список книг</a>
+            <a class="btn btn-primary" role="button" href="register.html">Зарегистрироваться</a>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Войти</button>
+        </div>
+        <div class="row inner">
+            <h2>Список самых популярных книг</h2>
+        </div>
+        <div class="row inner">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <img class="img-rounded center-block" src="images/top1.jpg">
+                <label>
+                Раз - ступенька, два - ступенька...
+                    </label><br><label>
+                Математика для детей 5-6 лет. Часть 1
+                </label>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <img class="img-rounded center-block" src="images/top2.jpg">
+                <label>
+                Логопедические домашние задания
+                    </label><br><label>
+                для детей 5-7 лет с ОНР. Альбом 1
+                </label>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <img class="img-rounded center-block" src="images/top3.jpg">
+                <label>
+                Грфвити Фолз. Дневник Диппера и Мэймл.</label><br><label>
+                Майны, приколы и веселье нон-стоп!</label>
+            </div>
+        </div>
+    <div class="row inner">    
+        <h2>О нас</h2>
+        <p><mark>По нашему мнению</mark> мы самый популярный интернет-магазин. :)</p>
+        <h4>Мы принимаем все виды оплат</h4>
+        <ol>
+        <li>Банковские карты</li>
+        <li>Оплата с мобильного</li>
+        <li>Электронные валюты</li>
+        </ol>
+
+        <h5>Скоро в продаже</h5>
+        <ul>
+        <li>Системы искуственного интеллекта. Учебное пособие</li>
+        <li>Веб разработка. Исчерпывающее руководство</li>
+        <li>Распределенные алгоритмы. Интуитивный подход</li>
+        </ul>
+    </div>
+
+
+
+<!-- modal -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  
+  <button type="submit" class="btn btn-default">Войти</button>
+</form>
+    </div>
+  </div>
+</div>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+</body>
+</html>

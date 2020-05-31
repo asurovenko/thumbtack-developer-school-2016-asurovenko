@@ -1,0 +1,29 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.date {
+  text-align:center;
+}
+
+.organization, .date > span {
+  text-decoration:underline;
+}
+
+
+p, table, .line{
+  margin-left:3em;
+}
+
+td {
+  text-align:right;
+  padding-right:1.5em;
+}
+
+hr {
+  margin-top:3em;
+}
+.bold {
+  font-weight:bold;
+}

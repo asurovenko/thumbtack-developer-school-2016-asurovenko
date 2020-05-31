@@ -1,0 +1,9 @@
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "components/todo";
+
+
+.logo img {
+  height: 30px;
+}

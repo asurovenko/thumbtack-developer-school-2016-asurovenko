@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">NetExam</string>
+
+    <string name="register">Регистрация</string>
+    <string name="enter">Вход</string>
+    <string name="last_name">Фамилия</string>
+    <string name="first_name">Имя</string>
+    <string name="patronymic">Отчество</string>
+    <string name="group">Группа</string>
+    <string name="semester">Семестр</string>
+    <string name="semester_little_char">\u0020семестр</string>
+    <string name="login">Логин</string>
+    <string name="pass">Пароль</string>
+    <string name="pass_again">Пароль ещё раз</string>
+    <string name="enter_pass_again">Введите пароль ещё раз</string>
+    <string name="empty_list">Список пуст</string>
+    <string name="empty_list_teacher">Ваш список экзаменов пуст</string>
+    <string name="complete">Завершить</string>
+    <string name="position">Должность</string>
+    <string name="department">Кафедра</string>
+    <string name="close">Закрыть</string>
+    <string name="complete_exam_answer">Завершить экзамен?</string>
+    <string name="complete_exam">Завершить экзамен</string>
+    <string name="cannot_undo_action">Это действие отменить нельзя!</string>
+    <string name="wait">Подождите</string>
+    <string name="wait_with_dots">Подождите…</string>
+    <string name="cancel">Отмена</string>
+    <string name="put_exam">Экзамен сдан!</string>
+    <string name="correct">Верно: </string>
+    <string name="not_correct">\nНе верно: </string>
+    <string name="unanswered">\nБез ответа: </string>
+    <string name="ok">OK</string>
+    <string name="cannot_be_empty_field">Поле не может быть пустым</string>
+    <string name="only_letters_and_numbers">Только буквы и цифры</string>
+    <string name="only_russian_letters_space_dash">Только русские буквы, пробел и тире</string>
+    <string name="min_eight_characters">Минимум 8 символов</string>
+    <string name="passwords_do_not_match">Пароли не совпадают</string>
+    <string name="student">Студент</string>
+    <string name="teacher">Преподаватель</string>
+    <string name="start">НАЧАТЬ</string>
+    <string name="start_without_return">\nНачать без возможности возврата?</string>
+    <string name="an_error_occurred">Произошла ошибка</string>
+    <string name="available_exams">Доступные экзамены</string>
+    <string name="complete_exams">Сданные экзамены</string>
+    <string name="not_ready">Не готов</string>
+    <string name="remaining_time" formatted="false">Оставшееся время: %02d:%02d:%02d</string>
+    <string name="wrong_or_empty_login">Пользователя с таким логином нет</string>
+    <string name="wrong_or_empty_password">Пароль недопустимого формата или пустой пароль</string>
+    <string name="login_already_exists">Пользователь с таким логином уже зарегистрирован</string>
+    <string name="login_doesnot_exist">Пользователя с таким логином нет</string>
+    <string name="password_not_match">Неправильный пароль</string>
+    <string name="wrong_token_passed">Недействительная сессия</string>
+    <string name="wrong_or_empty_first_name">Имя пользователя  недопустимого формата или пустое имя</string>
+    <string name="wrong_or_empty_last_name">Фамилия пользователя  недопустимого формата или пустая фамилия</string>
+    <string name="wrong_patronymic">Отчество пользователя  недопустимого формата</string>
+    <string name="wrong_semester">Недопустимый номер семестра</string>
+    <string name="empty_group">Пустое имя группы</string>
+    <string name="empty_position">Пустая должность преподавателя</string>
+    <string name="empty_department">Пустое название кафедры</string>
+    <string name="empty_exam_name">Пустое название предмета</string>
+    <string name="exam_already_exists">Экзамен с таким именем для этого семестра уже есть</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="read_error_server_response">Ошибка чтения ответа сервера</string>
+    <string name="failed_to_connect_to_server">Не удалось подключиться к серверу</string>
+    <string name="add_exam">Добавить экзамен</string>
+    <string name="add">Добавить</string>
+    <string name="exam_title">Название предмета</string>
+    <string name="save">Сохранить</string>
+    <string name="setup_ready">Установить\nготовность</string>
+    <string name="return_answer">Вернуть ответ?</string>
+    <string name="return_question">Вернуть вопрос?</string>
+    <string name="return_ok">Вернуть</string>
+    <string name="edit_answer">Редактировать ответ</string>
+    <string name="edit_question">Редактировать вопрос</string>
+    <string name="add_answer">Добавить ответ</string>
+    <string name="setup_ready_exam">Установить готовность экзамена</string>
+    <string name="true_answer">Правильный ответ</string>
+    <string name="count_question">Количество вопросов</string>
+    <string name="exam_time">Время на экзамен (в минутах)</string>
+    <string-array name="semester">
+        <item> </item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+</resources>

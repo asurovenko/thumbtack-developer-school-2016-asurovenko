@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.asurovenko.netexam.ui.teacher_screen.MainTeacherFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="@dimen/title_width"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fio"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/very_small_padding"
+                style="@android:style/TextAppearance.Medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/department_and_position"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:maxLines="1"
+                android:maxWidth="@dimen/max_title_width"
+                android:paddingLeft="@dimen/very_small_padding"
+                style="@android:style/TextAppearance.Small" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/exit_btn"
+            android:layout_width="@dimen/exit_button_width"
+            android:layout_height="@dimen/exit_button_width"
+            android:layout_gravity="end|center"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_exit" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/exam_text_empty_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/empty_list_teacher"
+            style="@android:style/TextAppearance.Large"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_load_exam"
+            android:layout_width="@dimen/progress_bar_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/coordinator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/exam_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/top_padding"
+                android:scrollbars="vertical" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/add_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_fab"
+                app:layout_behavior="net.asurovenko.netexam.ui.teacher_screen.ScrollAwareFABBehavior" />
+
+        </android.support.design.widget.CoordinatorLayout>
+    </FrameLayout>
+
+</LinearLayout>

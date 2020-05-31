@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+        <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container-fluid ">
+            <div class="row inner">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-cffset-4">
+            <h1>Книжный магазин</h1>
+            <br>
+            <a class="btn btn-primary" role="button" href="index.html">На главную</a>
+            <a class="btn btn-primary" role="button" href="table.html">Список книг</a>
+            <a class="btn btn-primary" role="button" href="register.html">Зарегистрироваться</a>
+
+    <div align="center">Список доступных книг</div>
+    <table class="table">
+      <tr>
+        <th>Номер</th>
+        <th>Название</th>
+        <th>Автор</th>
+        <th>Заказать</th>
+      <tr>
+      <tr>
+        <td>1</td>
+        <td>Физика. Иллюстративная хронология науки</td>
+        <td>Джексон том</td>
+        <td><input type="number" min="0" max="10" value="0"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Математика для гиков</td>
+        <td>Роузен рафаэль</td>
+        <td><input type="number" min="0" max="10" value="0"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Математическая логика. Курс лекций</td>
+        <td>Шапорев Сергей Дмитриевич</td>
+        <td><input type="range" min="0" max="10" step="1" value="5"></td>
+      </tr>
+    </table>
+  <label for="search">Поиск по таблице:</label> <input class="form-control"  type="text" id="search">
+                </div>
+    </div>
+    </div>
+</body>
+</html>

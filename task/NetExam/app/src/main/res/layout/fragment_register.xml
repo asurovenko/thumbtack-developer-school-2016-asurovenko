@@ -1,0 +1,320 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_tab_host"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.asurovenko.netexam.ui.register_screen.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/student_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/very_small_padding">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/last_name">
+
+                            <EditText
+                                android:id="@+id/last_name_student"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/first_name">
+
+                            <EditText
+                                android:id="@+id/first_name_student"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/patronymic">
+
+                            <EditText
+                                android:id="@+id/patranimic_student"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/group">
+
+                            <EditText
+                                android:id="@+id/group"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/label_semester"
+                                style="@android:style/TextAppearance.Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/semester" />
+
+                            <Spinner
+                                android:id="@+id/spinner_semester"
+                                android:layout_width="@dimen/spinner_width"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:entries="@array/semester"
+                                android:paddingLeft="@dimen/small_padding">
+
+                            </Spinner>
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/login">
+
+                            <EditText
+                                android:id="@+id/login_student"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/pass">
+
+                            <EditText
+                                android:id="@+id/pass_student"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="textPassword"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/pass_again">
+
+                            <EditText
+                                android:id="@+id/pass_again_student"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="textPassword"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/register_student_btn"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="@dimen/register_button_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/register" />
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/teacher_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/very_small_padding">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/last_name">
+
+                            <EditText
+                                android:id="@+id/last_name_teacher"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/first_name">
+
+                            <EditText
+                                android:id="@+id/first_name_teacher"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/patronymic">
+
+                            <EditText
+                                android:id="@+id/patranimic_teacher"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/department">
+
+                            <EditText
+                                android:id="@+id/department"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/position">
+
+                            <EditText
+                                android:id="@+id/position"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/login">
+
+                            <EditText
+                                android:id="@+id/login_teacher"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/pass">
+
+                            <EditText
+                                android:id="@+id/pass_teacher"
+                                android:layout_width="@dimen/edit_width"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPassword"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/edit_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="@string/pass_again">
+
+                            <EditText
+                                android:id="@+id/pass_again_teacher"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="textPassword"
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/register_teacher_btn"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="@dimen/register_button_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/register" />
+                    </LinearLayout>
+                </ScrollView>
+            </android.support.v7.widget.CardView>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

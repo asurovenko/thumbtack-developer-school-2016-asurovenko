@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/very_small_padding"
+    android:paddingLeft="@dimen/medium_padding"
+    android:paddingRight="@dimen/very_small_padding">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/very_small_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/answer_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/edit_btn"
+                android:padding="@dimen/small_padding"
+                android:paddingRight="0px"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/edit_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/remove_btn"
+                android:src="@drawable/ic_edit_min" />
+
+            <ImageButton
+                android:id="@+id/remove_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_remove_min" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

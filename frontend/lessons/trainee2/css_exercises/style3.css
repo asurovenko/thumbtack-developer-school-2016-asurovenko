@@ -1,0 +1,19 @@
+.date {
+  padding:10px 33px;
+  background-color:dodgerblue;
+  color:white;
+}
+
+.te {
+text-align: center;
+padding:10px 33px;:
+}
+
+.day:hover {
+box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+.day {
+padding:4px;
+display: table-cell; 
+}

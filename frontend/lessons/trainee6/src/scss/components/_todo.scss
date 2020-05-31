@@ -1,0 +1,13 @@
+.todo {
+
+  margin-top: 40px;
+  &__header {
+    background: #ee6251;
+  }
+  &__item {
+
+    &--checked {
+      background: #30bbbb;
+    }
+  }
+}

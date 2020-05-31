@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edit_width">300dp</dimen>
+    <dimen name="alert_dialog_text_width">200dp</dimen>
+    <dimen name="medium_padding">25dp</dimen>
+    <dimen name="very_small_padding">5dp</dimen>
+    <dimen name="image_button_width">40dp</dimen>
+    <dimen name="big_image_button_width">52dp</dimen>
+    <dimen name="small_padding">10dp</dimen>
+    <dimen name="one">1dp</dimen>
+    <dimen name="exan_result_width">120dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="top_indent">65dp</dimen>
+    <dimen name="progress_bar_width">90dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="top_padding">8dp</dimen>
+    <dimen name="small_top_indent">50dp</dimen>
+    <dimen name="login_edit_width">260dp</dimen>
+    <dimen name="login_top_margin">150dp</dimen>
+    <dimen name="spinner_width">80dp</dimen>
+    <dimen name="register_button_width">200dp</dimen>
+    <dimen name="title_width">340dp</dimen>
+    <dimen name="max_title_width">320dp</dimen>
+    <dimen name="exit_button_width">45dp</dimen>
+</resources>

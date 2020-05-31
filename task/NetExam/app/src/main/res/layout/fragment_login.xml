@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:layout_marginTop="@dimen/login_top_margin"
+    android:orientation="vertical"
+    tools:context="net.asurovenko.netexam.ui.login_screen.LoginFragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="@dimen/login_edit_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/login"
+        android:paddingBottom="@dimen/small_padding">
+
+        <EditText
+            android:id="@+id/login_field"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0px"
+            android:gravity="center"
+            android:inputType="none"
+            android:maxLines="1"
+            android:padding="@dimen/very_small_padding" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="@dimen/login_edit_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/pass">
+
+        <EditText
+            android:id="@+id/pass_field"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0px"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="@dimen/very_small_padding" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/login_edit_width"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/register_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/register" />
+
+        <Button
+            android:id="@+id/login_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/enter" />
+    </LinearLayout>
+
+</LinearLayout>

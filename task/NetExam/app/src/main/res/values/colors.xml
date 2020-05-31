@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="accentColor">#FF4081</color>
+    <color name="windowBackground">#E8EAF6</color>
+    <color name="textColorPrimary">#de000000</color>
+    <color name="textColorSecondary">#8a000000</color>
+    <color name="textColorHint">#61000000</color>
+
+    <color name="colorGreen">#00c800</color>
+    <color name="colorRed">#c80000</color>
+    <color name="colorGray">#969696</color>
+    <color name="colorReadyExam">#ffffff</color>
+    <color name="colorNotReadyExam">#dbe1ff</color>
+    <color name="colorExpandableGroup">#bae4ff</color>
+    <color name="correctAnswer">#99ff97</color>
+    <color name="notCorrectAnswer">#ffffff</color>
+</resources>

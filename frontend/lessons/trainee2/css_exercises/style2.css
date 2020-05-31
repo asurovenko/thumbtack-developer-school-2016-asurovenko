@@ -1,0 +1,97 @@
+td {
+  width:100px;
+  height:25px;
+  padding:0;
+}
+
+table {
+  cellspacing: 0;
+}
+
+tr:nth-child(1) > td:nth-child(1) {
+  background-color:yellow;
+}
+
+tr:nth-child(1) > td:nth-child(2) {
+  background-color:orange;
+}
+
+tr:nth-child(3) > td:nth-child(1) {
+  height:60px;
+  background-color:lightgreen;
+}
+
+tr:nth-child(3) > td:nth-child(2) {
+  background-color:pink;
+}
+
+tr:nth-child(6) > td:nth-child(1) {
+  background-color:lightblue;
+  height:15px;
+}
+
+tr:nth-child(5) > td:nth-child(1) {
+  background-color:indianred;
+}
+
+tr:nth-child(5) > td:nth-child(2) {
+  background-color:red;
+}
+
+.elem {
+  position:relative;
+}
+
+.elem div {
+    position:absolute;
+}
+
+#d1 {
+  width:200px;
+  height:25px;
+  background-color:yellow;
+}
+#d2 {
+  left:200px;
+  top:0px;
+  width:100px;
+  height:25px;
+  background-color:orange;
+}
+
+#d3 {
+  top:25px;
+  width:100px;
+  height:50px;
+  background-color:lightgreen;
+}
+
+#d4 {
+  top:75px;
+  width:100px;
+  height:15px;
+  background-color:lightblue;
+}
+
+#d5 {
+  top:25px;
+  left:100px;
+  width:200px;
+  height:35px;
+  background-color:pink;
+}
+
+#d6 {
+  top:60px;
+  left:100px;
+  width:100px;
+  height:30px;
+  background-color:indianred;
+}
+#d7 {
+  top:60px;
+  left:200px;
+  width:100px;
+  height:30px;
+  background-color:red;
+}

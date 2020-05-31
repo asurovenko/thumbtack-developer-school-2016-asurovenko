@@ -1,0 +1,15 @@
+{
+  "name": "first_bootstrap_sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss\\index.scss css\\index.css" },
+  "author": "me",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_student_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.asurovenko.netexam.ui.student_screen.MainStudentFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="@dimen/title_width"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fio"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/very_small_padding"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/group_and_semester"
+                style="@android:style/TextAppearance.Small"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:maxLines="1"
+                android:maxWidth="@dimen/max_title_width"
+                android:paddingLeft="@dimen/very_small_padding" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/exit_btn"
+            android:layout_width="@dimen/exit_button_width"
+            android:layout_height="@dimen/exit_button_width"
+            android:layout_gravity="end|center"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_exit" />
+    </FrameLayout>
+
+
+    <TabHost
+        android:id="@+id/student_tab_host"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/available_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/available_exam_text_empty_list"
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/empty_list"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_load_available_exam"
+                        android:layout_width="@dimen/progress_bar_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/available_exam_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/completed_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/completed_exam_text_empty_list"
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/empty_list"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_load_completed_exam"
+                        android:layout_width="@dimen/progress_bar_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/completed_exam_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+
+
+</LinearLayout>

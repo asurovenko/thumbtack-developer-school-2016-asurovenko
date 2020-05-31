@@ -1,0 +1,37 @@
+<div class="logo"><img src="../../images/logo.svg"></div>
+<table class="todo table table-responsive">
+<thead>
+	<tr>
+		<th>Note</th>
+		<th>Selection</th>
+		<th>Action</th>
+	</tr>
+</thead>
+{{#each collection.data }}
+    <tr class="todo__item {{#if status}}todo__item--checked{{/if}}" data-id={{uniqueId}}>
+        <td>{{text}}</td>
+        <td>
+			<div class="checkbox">
+				<input type="checkbox" {{#if status}}checked="checked" disabled{{/if}}>
+			</div>
+		</td>
+		<td>
+			<button class="btn btn-danger button-remove"><span class="glyphicon glyphicon-remove"></span></button>
+            <button class="btn btn-default button-up"><span class="glyphicon glyphicon-arrow-up"></span></button>
+            <button class="btn btn-default button-down"><span class="glyphicon glyphicon-arrow-down"></span></button>
+		</td>
+    </tr>
+{{/each}}
+</table>
+
+<div class="row">
+	<div class="col-sm-6">
+		<input type="text" class="text form-control">
+	</div>
+	<div class="col-sm-6">
+		<button class="btn btn-success button-add">
+			<span class="glyphicon glyphicon-plus"></span>
+			Add
+		</button>
+	</div>
+</div>
